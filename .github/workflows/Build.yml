@@ -271,8 +271,8 @@ jobs:
     - Sqlite
     - microsoft-data-sqlite
     runs-on: self-hosted
-    if: ${{ !cancelled() && (!cancelled() && (!cancelled() && (!cancelled() && (always()))))
-      }}
+    if: ${{ !cancelled() && (!cancelled() && (!cancelled() && (!cancelled() && (!cancelled()
+      && (always()))))) }}
     permissions:
       contents: read
       code-quality: write
